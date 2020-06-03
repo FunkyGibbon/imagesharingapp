@@ -1,0 +1,9 @@
+{% extends 'core.html' %}
+{% block body %}
+
+<div class="container">
+{% for obj in userqueryset%}
+<h5>{{obj.get_username}}</h5>
+{% endfor %}
+</div>
+{% endblock %}
